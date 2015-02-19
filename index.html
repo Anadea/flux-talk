@@ -139,7 +139,7 @@ function getStateFromStore() {
 
 var CommentBox = React.createClass({
   handleCommentSubmit: function(comment) {
-    Actions.create(comment);
+<span class="highlight">    Actions.create(comment);</span>
   },
   getInitialState: function() {
     return getStateFromStore();
