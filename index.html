@@ -41,27 +41,28 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
         <section data-background="#fff">
-          <h4>Простой MVC</h4>
+          <img src="http://facebook.github.io/flux/img/flux_logo.svg" alt="" style="width: 600px; box-shadow: none" />
+        </section>
+        <section data-background="#fff">
+          <h4>MVC</h4>
           <img src="images/mvc-simple.png" alt="" style="box-shadow: none" />
         </section>
 
         <section  data-background="#fff">
-          <h4>Сложный MVC</h4>
+          <h4>MVC в реальном проекте</h4>
           <img src="images/mvc-complex.png" alt="" style="box-shadow: none" />
         </section>
 
         <section>
-          <h4>Flux simple</h4>
           <img src="images/flux-simple-f8-diagram-1300w.png" alt="" />
         </section>
 
         <section>
-          <h4>Flux simple 2</h4>
           <img src="images/flux-simple-f8-diagram-with-client-action-1300w.png" alt="" />
         </section>
 
         <section data-background="#fff">
-          <h4>Data event flow</h4>
+          <h4>React data/event flow</h4>
           <img src="images/data-event-flow.png" alt="" style="box-shadow: none" />
         </section>
 
@@ -97,7 +98,7 @@ var CommentForm = React.createClass({
 
         <section>
           <h4>Zoom in</h4>
-					<pre><code data-trim data-noescape style="min-height: 615px">
+					<pre><code data-trim data-noescape style="min-height: 625px">
 var CommentBox = React.createClass({
   loadCommentsFromServer: function() {
     $.ajax({
@@ -164,7 +165,7 @@ var CommentBox = React.createClass({
         <section>
           <h4>Let's see action</h4>
 
-					<pre><code data-trim data-noescape style="min-height: 420px">
+					<pre><code data-trim data-noescape style="min-height: 430px">
 var Actions = {
   recieveComments: function(comments) {
     AppDispatcher.dispatch({
@@ -226,7 +227,7 @@ AppDispatcher.register(function(action) {
         <section>
           <h4>Где мои данные, чувак?</h4>
 
-					<pre><code data-trim data-noescape style="min-height: 520px">
+					<pre><code data-trim data-noescape style="min-height: 530px">
 var WebApi = {
   fetchComments: function() {
     $.ajax({
@@ -285,7 +286,7 @@ var Actions = {
         <section>
           <h4>До и после</h4>
 
-					<pre><code data-noescape style="min-height: 490px">
+					<pre><code data-noescape style="min-height: 500px">
 public/scripts              public/scripts
 `-- example.js               |-- actions
                              |   |-- ServerActionsCreators.js
@@ -466,7 +467,8 @@ app.get('/', function(req, res) {
           <h4>Ссылки</h4>
           <ul>
             <li><a href="https://github.com/js-lessons/react-tutorial">https://github.com/js-lessons/react-tutorial</a></li>
-            <li><a href="https://github.com/facebook/flux">https://github.com/facebook/flux</a></li>
+            <li><a href="http://facebook.github.io/flux/">http://facebook.github.io/flux/</a></li>
+            <li><a href="https://reactjsnews.com/the-state-of-flux/">https://reactjsnews.com/the-state-of-flux/</a></li>
             <li><a href="http://nerds.airbnb.com/isomorphic-javascript-future-web-apps/">http://nerds.airbnb.com/isomorphic-javascript-future-web-apps/</a></li>
             <li><a href="http://isomorphic.net/">http://isomorphic.net/</a></li>
             <li><a href="http://fluxible.io/">http://fluxible.io/</a></li>
