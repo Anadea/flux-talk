@@ -208,12 +208,12 @@ AppDispatcher.register(function(action) {
   var author, text;
 
   switch(action.actionType) {
-    case ActionTypes.COMMENT_CREATE:
+    case 'COMMENT_CREATE':
       _create(action.data);
       CommentStore.emitChange();
       break;
 
-    case ActionTypes.RECEIVE_RAW_COMMENTS:
+    case 'RECEIVE_RAW_COMMENTS':
       _addComments(action.rawComments);
       CommentStore.emitChange();
       break;
